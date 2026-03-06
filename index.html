@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e4e4e2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container{
+            max-width: 1000px;
+            width: 100%;
+            background: white; 
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        header, footer, section, article, aside{
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            color: #303030;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header{
+            background: #1010cd;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        footer{
+            background: #323279;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .main-content{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .main-area{
+            flex: 2;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        section{
+            background: #dfdddd;
+            border-left: 5px solid #1c3961;
+        }
+        article{
+            background: #b6b4b4;
+            border-left: 5px solid #031d42;
+        }
+        aside{
+            flex: 100;
+            min-width: 200px;
+            background: #cac1e9;
+            border-left: 5px solid #511b78;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>FlexBox</h1> -->
+    <div class="container">
+        <header>
+            Header de la pagina 💕🐣
+        </header>
+        <div class="main-content">
+            <aside>
+                <h2>Barra Lateral 📚</h2>
+                <p>Este es el contenido de la barra lateral.</p>
+            </aside>
+            <div class="main-area">
+                <section>
+                    <h2>Sección de Noticias 🗞️</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </section>
+                <article>
+                    <h2>Articulo de noticia 📰</h2>
+                    <!-- alt +z - acomodar -->
+                    <p>Sint incidunt, repellendus, quo ipsam nulla voluptatum necessitatibus nisi ex debitis ratione fugit consequuntur libero consectetur sed eveniet sapiente earum laboriosam tempore!</p>
+                </article>
+            </div> <!-- fn de main-area  -->
+            <aside>
+                <h2>Barra Lateral 📚</h2>
+                <p>Este es el contenido de la barra lateral.</p>
+            </aside>
+            
+        </div> <!-- fn de main-content  -->
+        <footer> Pie de página </footer> 
+    </div>
+</body>
+</html>
